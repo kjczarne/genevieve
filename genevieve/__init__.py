@@ -19,7 +19,8 @@ def assert_key_exists(parsed_yaml: Dict[str, Any], key: str):
         raise KeyError(key)
 
 
-# TODO: allow platform-scoped variables!! e.g. `windows`, `linux`, `macos` keys at the same level as `variables`
+# TODO: allow platform-scoped variables!!
+# e.g. `windows`, `linux`, `macos` keys at the same level as `variables`
 def generate_sh(parsed_yaml: Dict[str, Any], query_key: str) -> str:
     variables = parsed_yaml[query_key]
     str_sh = ""

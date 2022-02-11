@@ -2,7 +2,6 @@ from io import StringIO
 from typing import Union
 from os import PathLike
 import unittest
-import os
 from genevieve import generate_pwsh, generate_sh, parse_yaml, main
 from pathlib import Path
 
