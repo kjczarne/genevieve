@@ -47,4 +47,4 @@ def send(session: nox.Session):
     token = os.environ.get("TWINE_TOKEN")
     if not token:
         raise ValueError("PyPi upload token not set!")
-    session.run('twine', 'upload', 'dist/*.whl', '-u', '__token__', '-p')
+    session.run('twine', 'upload', 'dist/*.whl', '-u', '__token__', '-p', token)
