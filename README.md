@@ -1,6 +1,10 @@
+![Test Workflow](https://github.com/kjczarne/genevieve/actions/workflows/test-workflow.yaml/badge.svg)
+
+[![codecov](https://codecov.io/gh/kjczarne/genevieve/branch/main/graph/badge.svg?token=2UY06SMWYC)](https://codecov.io/gh/kjczarne/genevieve)
+
 # Genevieve
 
-GENerate EnVIronmEnt Variables Everywhere.
+**GEN**erate **E**n**VI**ronm**E**nt **V**ariables **E**verywhere.
 
 This is an extremely simple utility that produces:
 
