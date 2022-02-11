@@ -1,0 +1,2 @@
+export YOUR_MAMA="FAT"
+export YOUR_PAPA="GONE"

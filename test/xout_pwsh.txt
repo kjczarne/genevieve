@@ -1,0 +1,2 @@
+$env:YOUR_MAMA = "FAT"
+$env:YOUR_PAPA = "GONE"
