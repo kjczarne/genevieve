@@ -6,7 +6,7 @@ this script is used to generate shell scripts that can be sourced
 for Windows and Linux.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 import argparse
 from os import PathLike
