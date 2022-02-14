@@ -43,7 +43,7 @@ def parse_yaml(path: Union[str, PathLike]) -> Dict[str, Any]:
     return parsed_yaml
 
 
-def main(printer: Callable):
+def main(printer: Callable = print):
     def _main():
         parser = argparse.ArgumentParser(description="Generates env.env and env.ps1")
         parser.add_argument("-f", "--file",
