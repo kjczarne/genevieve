@@ -6,7 +6,7 @@ this script is used to generate shell scripts that can be sourced
 for Windows and Linux.
 """
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 import argparse
 from os import PathLike
@@ -19,6 +19,7 @@ def assert_key_exists(parsed_yaml: Dict[str, Any], key: str):
         raise KeyError(key)
 
 
+# TODO: interpolated variables
 # TODO: allow platform-scoped variables!!
 # e.g. `windows`, `linux`, `macos` keys at the same level as `variables`
 def generate_sh(parsed_yaml: Dict[str, Any], query_key: str) -> str:
@@ -76,6 +77,9 @@ def main(printer: Callable = print):
         with open(f"{filename}.ps1", "w") as f:
             f.write(str_pwsh)
     return _main
+
+
+default_main = main()
 
 
 if __name__ == "__main__":
