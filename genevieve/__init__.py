@@ -71,7 +71,7 @@ def main(printer: Callable = print):
             printer(str_pwsh)
             exit(0)
 
-        with open(f"{filename}.sh", "w") as f:
+        with open(f"{filename}.env", "w") as f:
             f.write(str_sh)
 
         with open(f"{filename}.ps1", "w") as f:
